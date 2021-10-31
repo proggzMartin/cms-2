@@ -12,8 +12,8 @@
   <div class="row">
     <div class="col">
       <?php if(have_posts()) : while(have_posts()) : the_post();?>
-      <div class="card">
-        <div class="card-header mt-3">
+      <div class="card mt-3">
+        <div class="card-header">
           <h3>
             <?php the_title();?>
           </h3>

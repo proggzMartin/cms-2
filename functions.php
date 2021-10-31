@@ -49,9 +49,14 @@ function load_js() {
 
 add_action( 'wp_enqueue_scripts', 'load_js');
 
-//Required in order to have menus. This brings up the option inside
+//Add menus-support. This brings up the option inside
 //the appearance-tab in wordpress.
 add_theme_support('menus');
+
+//Add support for pictures for posts, 'thumbnails'
+add_theme_support('post-thumbnails');
+add_image_size('small', 300, 300, true);
+add_image_size('large', 800, 800, true);
 
 //Display-locations alternatives
 //in the Appearance -> Menus -> Menu Settings
