@@ -11,7 +11,7 @@
 
 <div class="container mt-5">
   <div class="row">
-      <img class="img img-fluid" src="<?php echo $image;?>">
+      <img class="img" style="height: 200px; width: 200px;" src="<?php echo $image;?>">
   </div>
   <div class="row">
     <div class="col">

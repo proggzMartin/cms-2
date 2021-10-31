@@ -9,12 +9,15 @@
   class -->
   <body <?php body_class();?>>
 
-  <div id="test" class="sticky-top container">
-    <?php wp_nav_menu(
-      array(
-        //reference to register_nav_menus in functions-php.
-        'theme_location' => 'top-menu' 
-      )
-    );?>
-  </div>
+    <div id="test" class="sticky-top container">
+      <?php wp_nav_menu(
+        array(
+          //reference to register_nav_menus in functions-php.
+          'theme_location' => 'top-menu',
+         
+        )
+      );?>
+    </div>
+
+    
 
