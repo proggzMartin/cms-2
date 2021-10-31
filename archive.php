@@ -16,6 +16,7 @@
           <?php the_title();?>
         </h3>
         <?php the_excerpt();?>
+        <a href="<?php the_permalink();?>" class="btn btn-primary mb-3">Read more</a>
       <?php endwhile; endif;?>
     </div>
   </div>
