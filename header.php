@@ -7,3 +7,6 @@
 <!-- php body_class() tillåter WP lägga in egen body
 class -->
 <body <?php body_class();?>>
+
+<div id="test" class="sticky-top"></div>
+

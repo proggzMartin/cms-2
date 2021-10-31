@@ -3,5 +3,11 @@ Theme name: Test Theme
 */
 
 body {
-  background-color: green;
+  background-color: hotpink;
+}
+
+#test {
+  background: #fff;
+  width: 100%;
+  height: 100px;
 }
