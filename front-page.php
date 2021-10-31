@@ -22,6 +22,9 @@
   <div class="row">
     <div class="col">
       <?php echo $description?>
+      <a class="btn btn-primary" href="<?php echo $link['url']?>"> 
+        <?php echo $link['title'];?>
+      </a>
     </div>
   </div>
 </div>
