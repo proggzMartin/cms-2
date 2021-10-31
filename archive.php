@@ -12,11 +12,18 @@
   <div class="row">
     <div class="col">
       <?php if(have_posts()) : while(have_posts()) : the_post();?>
-        <h3>
-          <?php the_title();?>
-        </h3>
-        <?php the_excerpt();?>
-        <a href="<?php the_permalink();?>" class="btn btn-primary mb-3">Read more</a>
+      <div class="card">
+        <div class="card-header mt-3">
+          <h3>
+            <?php the_title();?>
+          </h3>
+        </div>
+        <div class="card-body">
+          <?php the_excerpt();?>
+          <a href="<?php the_permalink();?>" class="btn btn-primary mb-3">Read more</a>
+        </div>
+      </div>
+        
       <?php endwhile; endif;?>
     </div>
   </div>
