@@ -4,23 +4,23 @@
 <?php
 
 function load_stylesheets() {
-  //My own style
-  // wp_register_style(
-  //   'stylesheet', 
-  //   get_template_directory_uri() . '/bootstrapcss/bootstrap.min.css',
-  //   array(),
-  //   false, //version
-  //   'all');
-  // wp_enqueue_style('stylesheet');
-
   //Bootstrap
   wp_register_style(
-    'stylesheet', 
+    'bootstrap', 
     get_template_directory_uri() . '/bootstrapcss/bootstrap.min.css',
     array(),
     false, //version
     'all');
-  wp_enqueue_style('stylesheet');
+  wp_enqueue_style('bootstrap');
+
+  //My own style
+  wp_register_style(
+    'style', 
+    get_template_directory_uri() . '/themestyle.css',
+    array(),
+    false, //version
+    'all');
+  wp_enqueue_style('style');
 }
 
 add_action('wp_enqueue_scripts', 'load_stylesheets');
