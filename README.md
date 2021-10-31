@@ -1,4 +1,3 @@
-# cms-2
-cms2
+# CMS inlämning 2
 
-Tja
+![alt text](https://github.com/proggzMartin/cms-2/blob/main/image.jpg?raw=true)
