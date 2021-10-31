@@ -48,3 +48,16 @@ function load_js() {
 }
 
 add_action( 'wp_enqueue_scripts', 'load_js');
+
+//Required in order to have menus. This brings up the option inside
+//the appearance-tab in wordpress.
+add_theme_support('menus');
+
+//Display-locations alternatives
+//in the Appearance -> Menus -> Menu Settings
+register_nav_menus(
+  array(
+    'top-menu' => __('Top Menu', 'theme'),
+    'footer-menu' => __('Footer Menu', 'theme'),
+  )
+);
