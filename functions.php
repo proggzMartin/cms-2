@@ -55,6 +55,7 @@ add_theme_support('menus');
 
 //Add support for pictures for posts, 'thumbnails'
 add_theme_support('post-thumbnails');
+add_image_size('xsmall', 100, 100, true); //doesn't seem to work?
 add_image_size('small', 300, 300, true);
 add_image_size('large', 800, 800, true);
 

@@ -19,6 +19,7 @@
           </h3>
         </div>
         <div class="card-body">
+          <img src="<?php the_post_thumbnail_url('xsmall');?>" class="img-fluid">
           <?php the_excerpt();?>
           <a href="<?php the_permalink();?>" class="btn btn-primary mb-3">Read more</a>
         </div>
