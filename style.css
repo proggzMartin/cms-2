@@ -1,3 +1,7 @@
 /*
 Theme name: Test Theme
 */
+
+body {
+  background-color: green;
+}

@@ -16,7 +16,7 @@ function load_stylesheets() {
   //My own style
   wp_register_style(
     'style', 
-    get_template_directory_uri() . '/themestyle.css',
+    get_template_directory_uri() . '/style.css',
     array(),
     false, //version
     'all');
@@ -25,3 +25,16 @@ function load_stylesheets() {
 
 add_action('wp_enqueue_scripts', 'load_stylesheets');
 
+
+function load_js() {
+  wp_register_script(
+    'customjs', 
+    get_template_directory_uri() . '/scripts.js',
+    '',
+    1, //version
+    true, //script placed/run in footer
+    );
+  wp_enqueue_script('customjs');
+}
+
+add_action( 'wp_enqueue_scripts', 'load_js');
